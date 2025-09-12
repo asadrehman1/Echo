@@ -1,11 +1,12 @@
 "use client";
 
-import { useSession, signOut } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import EmptyState from "../components/EmptyState";
 
 export default function Page() {
-  const { data: session, status } = useSession();
+  const { status } = useSession();
   const router = useRouter();
 
   useEffect(() => {
@@ -14,12 +15,9 @@ export default function Page() {
     }
   }, [status, router]);
 
-  if (status === "loading") return <div>Loading...</div>;
-
   return (
-    <div>
-      <p>Welcome, {session?.user?.name}</p>
-      <button onClick={() => signOut()}>Logout</button>
+    <div className="hidden lg:block lg:pl-80 h-full">
+      <EmptyState />
     </div>
   );
 }
