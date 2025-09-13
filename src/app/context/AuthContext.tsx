@@ -21,11 +21,6 @@ function AuthGuard({ children }: { children: React.ReactNode }) {
       router.push("/");
     }
   }, [status, router, isPublicRoute]);
-
-  if (!isPublicRoute && status === "loading") {
-    return <div>Loading...</div>;
-  }
-
   return <>{children}</>;
 }
 
