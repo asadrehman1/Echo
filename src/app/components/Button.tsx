@@ -36,7 +36,6 @@ const Button: React.FC<ButtonProps> = ({
     text-sm
     font-medium
     shadow-sm
-    text-white
     focus:outline-none
     focus:ring-2
     focus:ring-offset-2
