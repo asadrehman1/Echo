@@ -7,7 +7,7 @@ import { Dialog } from "@headlessui/react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useCallback, useState } from "react";
-import toast from "react-hot-toast";
+import { toast } from "react-hot-toast";
 import { FiAlertTriangle } from "react-icons/fi";
 
 interface ConfirmModalProps {
