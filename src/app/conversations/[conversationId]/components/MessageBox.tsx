@@ -4,6 +4,8 @@ import clsx from "clsx";
 import { format } from "date-fns";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
+import { useState } from "react";
+import ImageModal from "./ImageModal";
 
 interface MessageBoxProps {
   isLast?: boolean;
@@ -11,11 +13,15 @@ interface MessageBoxProps {
 }
 const MessageBox = ({ isLast, message }: MessageBoxProps) => {
   const session = useSession();
+  const [imageModalOpen, setImageModalOpen] = useState(false);
+
   const isOwn = session?.data?.user?.email === message?.user?.email;
+
   const seenList = (message?.seen || [])
     .filter((user) => user?.email !== message?.user?.email)
     .map((user) => user?.name)
     .join(", ");
+
   const container = clsx("flex gap-3 p-4", isOwn && "justify-end");
 
   const avatar = clsx(isOwn && "order-2");
@@ -40,13 +46,19 @@ const MessageBox = ({ isLast, message }: MessageBoxProps) => {
           </div>
         </div>
         <div className={msg}>
+          <ImageModal
+            src={message?.image}
+            isOpen={imageModalOpen}
+            onClose={() => setImageModalOpen(false)}
+          />
           {message?.image ? (
             <Image
+              onClick={() => setImageModalOpen(true)}
               src={message?.image}
               alt="Message"
               height={288}
               width={288}
-              className="object-cover cursor-pointer hover:scale-10 transition translate"
+              className="object-cover cursor-pointer"
             />
           ) : (
             <div className="whitespace-pre-wrap">{message?.body}</div>
