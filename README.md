@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Echo 💬
 
-## Getting Started
+**Real Time Chat Application built with Next.js**  
+Stay connected with instant messaging, group chats, media sharing, and powerful authentication — all wrapped in a sleek Tailwind-powered design..
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- **Real-time messaging using Pusher**
+- **Message notifications and alerts**
+- **Tailwind design for sleek UI**
+- **Tailwind animations and transition effects**
+- **Full responsiveness for all devices**
+- **Credential authentication with NextAuth**
+- **Google authentication integration**
+- **Github authentication integration**
+- **File and image upload using Cloudinary CDN**
+- **Client form validation and handling using react-hook-form**
+- **Server error handling with react-toast**
+- **Message read receipts**
+- **Online/offline user status**
+- **Group chats and one-on-one messaging**
+- **Message attachments and file sharing**
+- **User profile customization and settings**
+- **How to write POST, GET, and DELETE routes in route handlers (app/api)**
+- **How to fetch data in server React components by directly accessing the database**
+- **Handling relations between Server and Child components in a real-time environment**
+- **Creating and managing chat rooms and channels**  
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend & SSR**: Next.js  
+- **Real-time messaging**: Pusher
+- **Authentication**: NextAuth
+- **Database**: MongoDB with **Prisma ORM**        
+- **State Management**: Zustand * ContextAPI  
+- **UI Library**: HeadlessUI    
+- **File Storage**: Cloudinary
+- **Deployment**: Vercel
+
+---
+
+## 📦 Environment Variables
+
+Create a `.env` file and add the following:
+
+```env
+DATABASE_URL="mongodb+srv:..."
+NEXTAUTH_SECRET="FAdvU6..."
+
+GITHUB_ID=Ov2...
+GITHUB_SECRET=36e...
+
+GOOGLE_CLIENT_ID=164...
+GOOGLE_CLIENT_SECRET=GOC...
+
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=ds7...
+NEXT_PUBLIC_CLOUDINARY_API_KEY=655...
+CLOUDINARY_API_SECRET=OSr...
+
+NEXT_PUBLIC_PUSHER_APP_KEY=171...
+PUSHER_APP_ID=205...
+PUSHER_SECRET=77a...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> **Note:** Replace these with your own credentials in production.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💻 Setup & Run Locally
 
-## Learn More
+```bash
+# Clone the repository
+git clone https://github.com/asadrehman1/Echo.git
+cd echo
 
-To learn more about Next.js, take a look at the following resources:
+# Install dependencies
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Run the development server
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open [http://localhost:3000](http://localhost:3000) to view in your browser.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Asad Rehman** — [GitHub](https://github.com/asadrehman1)  
+
+---
+
+## ⚡ License
+
+MIT © 2025 Asad Rehman
