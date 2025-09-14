@@ -44,7 +44,7 @@ const DesktopSidebar = ({ currentUser }: DesktopSidebarProps) => {
             onClick={() => setIsOpen(true)}
             className="cursor-pointer hover:opacity-75 transition"
           >
-            <Avatar user={currentUser} />
+            <Avatar user={currentUser || undefined} />
           </div>
         </nav>
       </div>
