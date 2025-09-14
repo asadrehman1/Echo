@@ -1,13 +1,13 @@
 # Echo 💬
 
 **Real Time Chat Application built with Next.js**  
-Stay connected with instant messaging, group chats, media sharing, and powerful authentication — all wrapped in a sleek Tailwind-powered design..
+Stay connected with instant messaging, group chats, media sharing, and powerful authentication — all wrapped in a sleek Tailwind powered design..
 
 ---
 
 ## 🚀 Features
 
-- **Real-time messaging using Pusher**
+- **Real time messaging using Pusher**
 - **Message notifications and alerts**
 - **Tailwind design for sleek UI**
 - **Tailwind animations and transition effects**
@@ -25,7 +25,7 @@ Stay connected with instant messaging, group chats, media sharing, and powerful 
 - **User profile customization and settings**
 - **How to write POST, GET, and DELETE routes in route handlers (app/api)**
 - **How to fetch data in server React components by directly accessing the database**
-- **Handling relations between Server and Child components in a real-time environment**
+- **Handling relations between Server and Child components in a real time environment**
 - **Creating and managing chat rooms and channels**  
 
 ---
@@ -66,7 +66,7 @@ PUSHER_APP_ID=205...
 PUSHER_SECRET=77a...
 ```
 
-> **Note:** Replace these with your own credentials in production.
+> **Note:** Replace these with your own credentials in local/production envrionment.
 
 ---
 
