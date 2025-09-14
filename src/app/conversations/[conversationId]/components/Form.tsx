@@ -13,7 +13,6 @@ const Form = () => {
     register,
     handleSubmit,
     setValue,
-    formState: { errors },
   } = useForm<FieldValues>({
     defaultValues: {
       message: "",
@@ -55,7 +54,6 @@ const Form = () => {
         <MessageInput
           id="message"
           register={register}
-          errors={errors}
           required
           placeholder="Type your message..."
         />
