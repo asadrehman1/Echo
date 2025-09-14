@@ -42,7 +42,9 @@ const MessageBox = ({ isLast, message }: MessageBoxProps) => {
         <div className="flex items-center gap-1">
           <div className="text-sm text-gray-500">{message?.user?.name}</div>
           <div className="text-xs text-gray-400">
-            {format(new Date(message?.createdAt), "p")}
+            {message?.createdAt
+              ? format(new Date(message.createdAt), "p")
+              : "—"}
           </div>
         </div>
         <div className={msg}>
