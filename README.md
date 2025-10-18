@@ -45,51 +45,6 @@ Stay connected with instant messaging, group chats, media sharing, and powerful 
 
 ---
 
-## 📦 Environment Variables
-
-Create a `.env` file and add the following:
-
-```env
-DATABASE_URL="mongodb+srv:..."
-NEXTAUTH_SECRET="FAdvU6..."
-
-GITHUB_ID=Ov2...
-GITHUB_SECRET=36e...
-
-GOOGLE_CLIENT_ID=164...
-GOOGLE_CLIENT_SECRET=GOC...
-
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=ds7...
-NEXT_PUBLIC_CLOUDINARY_API_KEY=655...
-CLOUDINARY_API_SECRET=OSr...
-
-NEXT_PUBLIC_PUSHER_APP_KEY=171...
-PUSHER_APP_ID=205...
-PUSHER_SECRET=77a...
-```
-
-> **Note:** Replace these with your own credentials in local/production envrionment.
-
----
-
-## 💻 Setup & Run Locally
-
-```bash
-# Clone the repository
-git clone https://github.com/asadrehman1/Echo.git
-cd echo
-
-# Install dependencies
-npm install
-
-# Run the development server
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view in your browser.
-
----
-
 ## 📝 Author
 
 **Asad Rehman** — [GitHub](https://github.com/asadrehman1)  
