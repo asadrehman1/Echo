@@ -1,7 +1,9 @@
 # Echo 💬
 
 **Real Time Chat Application built with Next.js**  
-Stay connected with instant messaging, group chats, media sharing, and powerful authentication — all wrapped in a sleek Tailwind powered design..
+Stay connected with instant messaging, group chats, media sharing, and powerful authentication — all wrapped in a sleek Tailwind-powered design.
+
+![Echo Preview](./public/images/echo-preview.png)
 
 ---
 
